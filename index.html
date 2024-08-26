@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstarp CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+    </style>
+    <title>Online Novel Reader</title>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <h1>Escapism</h1>
+            <button>Get Books Prime</button>
+            <ul>
+                <li class="active_li"><a href="#"><i class="bi bi-archive-fill"></i> Browse</a></li>
+                <li><a href="#"><i class="bi bi-clipboard-check-fill"></i>Genre</a></li>
+                <li><a href="#"><i class="bi bi-calendar-event-fill"></i> Events</a></li>
+                <li><a href="#"><i class="bi bi-people-fill"></i> Friends</a></li>
+                <li><a href="#"><i class="bi bi-controller"></i> Books</a></li>
+                <li><a href="#"><i class="bi bi-bookmark-check-fill"></i> Store</a></li>
+            </ul>
+            <!-- Famous authors box start  -->
+            <div class="subscriptions">
+                <h5>Famous Authors</h5>
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/anna.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Anna Todd</h6>
+                            <p>After series</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/author2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Brittany Geragotelis</h6>
+                            <p>Life's A Witch</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a3.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Beth Reekles</h6>
+                            <p>the booth</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a4.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Lindsey Summers</h6>
+                            <p>The Cell Phone Swap</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a5.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Taran Matharu</h6>
+                            <p> The Novice</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a6.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Ali Novak</h6>
+                            <p>My Life with the Walter Boys</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a7.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Jordan Lynde</h6>
+                            <p>A Proscriptive Relationship</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a8.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Abigail Gibbs</h6>
+                            <p>Dinner with a Vampire</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a9.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Gavin Hetherington</h6>
+                            <p>Abby Winters series</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_bx">
+                            <img src="img1/a10.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>Jonahmae Panen Pacala</h6>
+                            <p>Every Beast needs a beauty</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </aside>
+        <article>
+            <nav>
+                <button>Explore</button>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="right_bx">
+                    <i class="bi bi-moon-fill" id="day_night"></i>
+                    <i class="bi bi-brightness-high-fill" id="day_night2"></i>
+                    <i class="bi bi-wifi" id="wifi"></i>
+                    <i class="bi bi-gear-fill"></i>
+                    <button id="active_battery"><i class="bi bi-battery-half" id="battery_icon"></i> <span id="battery_level">84%</span></button>
+                    
+                </div>
+            </nav>
+            <!-- novel genre Box Start  -->
+            <div class="novel1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>Recommend For You</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card">
+                        <img src="img1/advtheme.jpg" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>ADVENTURE</h5>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img1/Fantasytheme.jpg" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>FANTASY</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img1/fanfictiontheme.png" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>FANFICTION</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="pubg.html"> <img src="img1/Horrortheme.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>HORROR</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img1/mysterytheme.png" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>MYSTERY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img1/thrillertheme.jpg" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>THRILLER</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img1/romancetheme.jpg" alt="">
+                        <div class="content">
+                            <div class="left">
+                                <h5>ROMANCE</h5>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div> 
+            <div class="novel_1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>ADVENTURE</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/wars.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Orc War Uprising</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                        <img src="img1/adventure/plunder.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Plunder</h5>
+                            </div>
+                            <h6>881,646 Views</h6>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/queenofthieves.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Queen Of Thieves</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/rapture.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Rapture</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/crossbones.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Cross Bones</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/pirates.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>The RookienPirate</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/adventure">
+                            <img src="img1/adventure/legend.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>The Rider's Legend</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+                <div class="novel_1">
+                    <div class="btns">
+                        <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                        <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                    </div>
+                    <h3>FANTASY</h3>
+                    <div class="novel_bx" id="novel_bx_1">
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/azura.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Blood Of Azura</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                            <img src="img1/fantasy/heir.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>The Heir and the General</h5>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/ruin.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Reiac and Ruin</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/dragonking.jpeg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>The Dragon King</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/legend.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>The Rider's <Legend></Legend></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/cutbone.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Cut to the bone</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fantasy">
+                                <img src="img1/fantasy/queenbelow.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>The Queen Below</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="novel_1">
+                    <div class="btns">
+                        <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                        <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                    </div>
+                    <h3>FANFICTION</h3>
+                    <div class="novel_bx" id="novel_bx_1">
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/catnoir.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Fire Bird</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/forbidden.jpeg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Forbidden Love</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/gojo.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Baby Gojo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/reincarnated.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Reincarnated Bond</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/stupid.jpg" alt=""></a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Stupidly attracted to U</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/unexpextedy.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Unexpextedly dating</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <a href="https://www.wattpad.com/stories/fanfiction">
+                            <img src="img1/fanfiction/tryme.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="left">
+                                    <h5>Try me </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="novel_1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>HORROR</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/hollow.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Hollow</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                        <img src="img1/horror/hound.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>The Hound</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/swallon.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Swallon</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/redzoned.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Red Zoned</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/apart239.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Apartment 239</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/makescream.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Make them scream</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/horror">
+                            <img src="img1/horror/serial.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Serial</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novel_1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>MYSTERY</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/confession.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Confession About Colton</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                        <img src="img1/mystery/fourwall.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Four Wall</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/ifudo.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Dead if you do</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/paradise.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Paradise Thriller</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/takenby.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Taken by dark</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/wathappn.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>What happened that night</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/mystery">
+                            <img src="img1/mystery/wholetruth.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>The Whole Truth</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novel_1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>THRILLER</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/diaries.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Natalies diaries</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                        <img src="img1/thriller/downrain.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Down Came the rain</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/projecto.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Project Oxygen</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/serial.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Serial</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/para.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Cross Bones</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/4wall.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Four Walls</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/thriller">
+                            <img src="img1/thriller/youdo.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>The Rider's Legend</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novel_1">
+                <div class="btns">
+                    <i class="bi bi-caret-left-fill" id="game_bx_1_left_btn"></i>
+                    <i class="bi bi-caret-right-fill" id="game_bx_1_right_btn"></i>
+                </div>
+                <h3>ROMANCE</h3>
+                <div class="novel_bx" id="novel_bx_1">
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/aftrfall.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>After I fall</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                        <img src="img1/romance/emeraldeyes.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Emerald Eyes</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/finalcountdwn.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Final Countdown</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/firstdance.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>First Dance</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/histosteal.jpg" alt=""></a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>His To Steal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/madeforu.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Made For You</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <a href="https://www.wattpad.com/stories/romance">
+                            <img src="img1/romance/playboyboss.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <div class="left">
+                                <h5>Taming the playboy Boss</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+    </header>
+</body>
+
+</html>
